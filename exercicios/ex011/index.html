@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas,audio e vídeo</title>
+    <link rel="shortcut icon" href="Logo html  220.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens dinamicas,audio e vídeo</h1>
+    <h2>Imagem Flexivel</h2>
+    <picture><!--imagem flexivel-->
+        <!--a tag <source> tem 3 atributos:-->
+
+        <!--media: indica o tamanho maximo  a ser conderado para carrregar a imagen do atributo <srcset>-->
+
+       <!--Srcset:configura o nome da imagem quando o tamanho maximo for indicado.-->
+
+       <!--srcset: indica a media type da imagem que usaremos.-->
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png" >
+        <source media="(max-width:1050px)" srcset="imagens/foto-i.png" type="image/png" >
+        <img src="imagens/foto-g.png" alt="foto grande"><!--ainda usamos a tag <img> mas ela esta dentro da tag <picture>-->
+    </picture>
+<h2>Podcast</h2>
+<audio preload="metadata" controls autoplay loop >
+    <!--Atributos da tag audio
+        .Preload indica se audio será carregado ou não ,tem 3 alores.
+         -Metadata apenas as informações sobre os arquivos;
+         -None não carrega nada até até play ser acionado.
+         -Auto(padrão) carrega audio automaticamente. O audio só para de carregar quando audio for carregado.
+       .Controls apresenta o palyer na tela.
+       .Autoplay
+       .Loop
+    -->
+<source src="midias/guanacast-33.mp3" type="audio/mpeg">              
+<source src="midias/guanacast-33.0gg" type="audio/ogg">
+<source src="midias/guanacast-33.wav" type="audio/wav">
+<p>Seu navegador não suporta o audio.<a href="midias/guanacast-33.mp3" download="guanacast-33.mp3"type="audio/mpeg">Clique aqui para baixa-lo.</a></p>
+</audio>
+<audio src="midias/guanacast-33.mp3" controls autoplay></audio>
+    
+</body>
+</html>

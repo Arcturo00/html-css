@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-class</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: justify;
+        }
+        h1{
+            text-align: center;
+        }
+           div{
+            font-size: 1.2em;
+           }
+        div>p{
+            display: none;
+        }
+        div:hover>p{
+            font-size: 18px;
+            display: block;
+             color: red;
+             text-align: center;
+        }
+        p{
+            font-size: large;
+        }
+        p{
+            text-align: right;
+            font-size: 2.2em;
+        }
+
+
+   
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <div id="d1">Passe o mouse aqui.<p><a href="pseudo-class.html"target="_self" rel="prev">Voltar</a></p></div>
+    <p id="fim">Fim.</p>
+</body>
+</html>

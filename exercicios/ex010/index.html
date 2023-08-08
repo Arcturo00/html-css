@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="Logo html  220.png" type="image/x-icon">
+    <title>Ligações em toda parte</title>
+</head>
+<body>
+    <h1>Links/Âncoras</h1>
+    <p>Acesse o <a href="https://youtube.com">YouTube</a><!--tag para link--> para assistir videos.</p>
+    <!--href é o principal atributo da tag --><p>Acesse o <a href=""hreflan="en"></a> e a página estará em englês </p>
+    <!--atributo hreflang serve para indicar qual será a tradução automatica-->
+    <h2>Mira no alvo</h2>
+    <p>
+        Acesse o <a href="https://youtube.com"target="_blank">youtube</a> e abra uma nova
+     janela.
+    </p>
+     <!--atributo="_blank"-->
+     <p>
+        <a href="pg02/pg02.html"target="_self">Aperte aqui </a>para ir para a página 002 desse mesmo site, sem abrir outra janela.</p>
+     <!--atributo Target="_self"-->
+     <p>
+        Use <a href="pgs/pg03.html"target="_self">esse link</a> e leia o comentário, no código da proxima página.
+    </p>
+     <h2>Esse link é seu ou dos outros ?</h2>
+     <!--rel indica a naturez do destino link-->
+     <!--O rel facilita o sistema de busca do Google.-->
+<p>Acesse a<a href="http://www.hostnet.com.br"target="_blank"rel="nofallow"> Hostnet.</a>
+    <!--rel="nofallow indica que não dou aval"-->
+     <p>
+        <a href="pg02.html"target="_self"rel="next">Aperte aqui </a>para abrir a página 02 desse site sem abrir uma nova janela.</p>
+        <!--Next indica proxima parte do documento-->
+        <p>Acesse o <a href="https://youtube.com"target="_blank" rel="external">youtube</a> e abra uma nova janela.</p>
+        <!--external indica página que não faz parte do documento atual-->
+        <p>
+        Use <a href="pgs/pg03.html"target="_self"rel="next">esse link</a> e leia o comentário, no código da proxima página.
+    </p>
+
+ <h2>Links internos</h2>
+     <p>Links internos não precisão de URL,só do nome ou caminho do arquivo.</p>
+      <p>
+        <a href="pg02.html"target="_self"rel="next">Aperte aqui </a>para abrir a página 02 desse site sem abrir uma nova janela.
+    </p>
+      <p>
+        Use <a href="pgs/pg03.html"target="_self"rel="next">esse link</a> e leia o comentário, no código da proxima página.
+    </p>
+     <h2>Links externos</h2>
+<p>
+    Acesse o <a href="https://youtube.com"target="_blank" rel="external">youtube</a> e abra uma nova janela.
+</p>
+<p>Acesse a<a href="http://www.hostnet.com.br"target="_blank"rel="nofallow"> Hostnet.</a>
+</p>
+<H2>Links de Dowloads</H2>
+<p>
+    Baixe o PDF do livro <a href="Livros/meulivro.pdf"Dowload="meulivro"type="application/pdf">aqui.</a>
+</p>
+<!--dowload indica o nome do arquivo-->
+<!--Type,nesse caso,indica o tipo de arquivo que vai ser baixado(media type)-->
+<p>
+    Baixe o ZIP do livro <a href="Livros/meulivro.zip"Dowload="meulivro"type="application/zip">aqui.</a>
+</p>
+
+
+        
+
+
+
+    
+    
+</body>
+</html>

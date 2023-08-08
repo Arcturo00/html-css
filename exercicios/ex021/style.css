@@ -1,0 +1,67 @@
+@charset "UTF-8";
+body{
+    background-color:#C0D9BF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+h1{
+    font-family: serif;
+    text-align: center;
+    font-size: 2em;
+    color:#137310;
+  
+
+}
+h1#xbox{
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+    text-shadow:2px 2px 2px rgba(0, 0, 0, 0.782) ;
+}
+p{
+    text-align: justify;
+}
+p#footer{
+    color:#F2F2F2 ;
+    padding: 5px;
+}
+   
+a{
+    color:#F2F2F2 ;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 5px ;
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+nav{
+    background-color: #137310;
+    text-align: center;
+    padding: 3px;
+    margin:35px  auto ; 
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.712) ;
+    text-shadow:1px 2px 2px rgba(0, 0, 0, 0.664) ;
+}
+
+section{
+    text-align: right;
+    color:#77A676;
+}
+main{
+    background-color: #F2F2F2;
+    padding: 7px;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.433) ;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.295);
+}
+article#artigo{
+    background-color: rgba(0, 0, 0, 0.234) ;
+  border-radius: 4px;
+    padding: 10px;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.664) ;
+  margin:10px auto ;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.664) ;
+  text-shadow:1px 2px 2px rgba(0, 0, 0, 0.664) ;
+}

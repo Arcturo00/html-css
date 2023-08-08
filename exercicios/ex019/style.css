@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body{
+    font-family:   Arial, sans-serif;
+    background-color: rgb(6, 209, 209);
+    text-align: justify;
+}
+#principal{/* também poderia ser escrito : h1#principal*/
+text-align: center;
+background-color: rgb(209, 246, 246);
+color: black;
+}
+#fim{/* também poderia ser escrito : h2#fim*/
+    text-align-last: right;
+    color: black;
+}
+h1{
+    font-family: serif;
+    color: rgba(69, 81, 81, 0.936);
+}
+h2{
+color: rgb(234, 242, 241);
+text-indent: 25px;
+
+}
+p{  text-indent: 18px;
+    font-size: 1.3em;
+}

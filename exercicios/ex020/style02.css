@@ -1,0 +1,55 @@
+@charset "UTF-8";
+body{
+    font-family: , 'Arial Narrow Bold', sans-serif;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+a:visited{
+    color:rgb(182, 51, 11);
+}
+/*visited para links já visitados*/
+
+a:active{
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/*pseudo-classe para ativação*/
+
+a::after{
+    content: '[link]';
+}
+/*diz que é um link
+:: = pseudo-elemento
+pseudo-elementos interagem com o conteúdo*/
+
+a.lista2:visited{
+    color:rgb(233, 93, 50);
+}
+
+
+a.lista2:active{
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a#lista22::before{
+    content:'[link]'
+    /*before possibilitou a mensagem "link* no inicio do link*/
+}
+a#lista22::after{
+    content:''}
+
+a#especial::after{
+    content: '[link]';
+}
+  /*before possibilitou a mensagem "link* no final do link*/
+a#especial::before{
+    content: '[link]';
+}
+
