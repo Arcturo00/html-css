@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalização de fundos</title>
+    <style>
+        div{
+            display: inline-block;
+        height: 299px;
+        width: 299px;
+        border: 1px solid black;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        }
+        div#imagem-online{
+            background-image: url('http://astro.if.ufrgs.br/sol23jul02eit.gif');
+            /*link de uma imagem hospedada em outro site*/
+            background-repeat: no-repeat;
+            /*background-repeat: no-repeat; indica que a imagem não deve se repetir*/
+        }
+        div#plano-de-fundo{
+            background-image: url(imagens/wallpaper003.jpg);
+            background-size: 299px 299px;
+        }
+        div#repetição{
+            background-image: url(imagens/pattern001.png);
+            background-repeat: repeat;
+            /*a imagem será repetida*/
+        }
+        div#eixo-y{
+            background-image: url(imagens/pattern002.png);
+            background-repeat:repeat-y ;/*repetição no eixo-y*/
+
+        }
+        div#eixo-x{
+            background-image: url(imagens/pattern001.png);
+            background-repeat:repeat-x ;/*repetição no eixo-x*/
+
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Teste de aplicação de fundo</h1>
+    <div id="imagem-online"></div>
+    <div id="plano-de-fundo"></div>
+    <div id="repetição"></div>
+    <div id="eixo-y"></div>
+    <div id="eixo-x"></div>
+</body>
+</htmleixo-y
