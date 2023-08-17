@@ -21,13 +21,15 @@ header{
     text-align: center;
     font-size: 2em;
     padding: 50px;
-    text-shadow: 2px 1.1px rgba(255, 255, 255, 0.46);
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.686);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.356);
 }
 header>h1{
     font-family: var(--passivi-one);
 }
 header>p{
     padding-top: 3px;
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.615);
 }  
 section{
     margin: auto;
@@ -35,6 +37,8 @@ section{
     min-width: 350px;
     margin-top: 44px;
     margin-bottom: -11px;
+ 
+
 
 
 } 
@@ -44,7 +48,7 @@ p{
     padding-left: 28px;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.23);
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.23);
 }
 a{
     text-decoration:none ;
@@ -70,19 +74,21 @@ a:hover{
     background-image: linear-gradient(to right,rgba(0, 0, 0, 0.627),rgba(0, 0, 0, 0));
     color: white;
     margin-right: 381px;
-    text-shadow: 1px 1.1px rgba(255, 255, 255, 0.5);
+    text-shadow:1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 footer{
     background-color: black;
-    color: white;
+   
     margin-top: 31px;
     
    
 }
 footer>p{
+     color: white;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding-left: 11px;
     padding-right: 11px;
     padding-top: 15px;
+    text-shadow:1px 1px 2px rgba(255, 255, 255, 0.433);
 }
