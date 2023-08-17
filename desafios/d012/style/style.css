@@ -19,14 +19,32 @@ header{
     background-color: black;
     color: white;
     text-align: center;
-    padding: 40px;
-    font-size: 1.8em;
+    font-size: 2em;
+    padding: 50px;
+    text-shadow: 2px 1.1px rgba(255, 255, 255, 0.46);
 }
 header>h1{
     font-family: var(--passivi-one);
 }
 header>p{
     padding-top: 3px;
+}  
+section{
+    margin: auto;
+    max-width: 900px;
+    min-width: 350px;
+    margin-top: 44px;
+    margin-bottom: -11px;
+
+
+} 
+p{
+    font-family: var(--sriracha);
+    font-size: 26px;
+    padding-left: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.23);
 }
 a{
     text-decoration:none ;
@@ -35,21 +53,36 @@ a{
 a:hover{
     text-decoration: underline;
 }
-p{
-    font-family: var(--sriracha);
-    font-size: 22px;
-    padding-left: 28px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-#flor{
-    background-color: gold;
-    background-image: url(imagens/background001.jpg);
-}
-#carta{
-    background-color: rgba(47, 48, 50, 0.3);
-    background-image: url(imagens/background002.jpg);
-}
+
 .background{
+    max-width: 1919px;
+    max-height: 326px;
+    padding-top: 40px;
+    padding-bottom: 75px;
     background-size: cover;
+    background-position: center right; 
+    background-attachment: fixed;
+} 
+.background>p{
+    margin: auto;
+    max-width: 800px;
+    min-width: 350px;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.627),rgba(0, 0, 0, 0));
+    color: white;
+    margin-right: 381px;
+    text-shadow: 1px 1.1px rgba(255, 255, 255, 0.5);
+}
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 31px;
+    
+   
+}
+footer>p{
+    text-align: center;
+    font-size: 1.2em;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 15px;
 }
