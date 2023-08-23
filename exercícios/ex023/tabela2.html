@@ -10,10 +10,34 @@
         }
         table{
             border-collapse: collapse;
+            position: relative;
         }
-        thead{
+        caption{
+            font-size: 1.5em;
+            border:1px solid;
+            background-color: rgba(255, 217, 0, 0.185);
+            font-weight: bold;
+        }
+        thead,tfoot{
             background-color: gray;
         }
+        thead>tr,tfoot>tr{
+            color: white;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+                }
+        tbody > tr:nth-child(odd)/*2n-1*//*even 2n*/{
+            background-color:lightgray;
+        }
+        /*
+        nth-child(2n) é uma psêdo-class para efeito zebrado
+        "2n" indica o padrão
+        também se usa odd ou even
+        obs: pode-se usar mais de uma vez
+        */
         td,th{
             border: 1px solid;
             padding: 5px;
@@ -31,7 +55,9 @@
     <!--
         anatomia de tabelas grandes
 
-        table
+       
+        table 
+            caption=título
             thead
                 te,td,th
             tbody
@@ -39,12 +65,15 @@
             tfoot(Não é obrigatorio)
                 te,td,th
     -->
-    <h2>População e mudança da população do Brasil por Estado</h2>
-    <table>
+    
+
+
+    <table> 
+        <caption>Mudança da população do Brasil por Estado</caption>
         <thead>
-            <th>Posição</th>
-            <th>Unidade da federção</th>
-            <th>Crescimento</th>
+            <th scope="col">Posição</th>
+            <th scope="col">Unidade da federção</th>
+            <th scope="col">Crescimento</th>
         </thead>
         <tbody>
             <tr>
@@ -82,9 +111,119 @@
                 <td>Pernambuco</td>
                 <td class="numero">261 707</td>
             </tr>
+            <tr>
+                <td class="posiçao">8º</td>
+                <td>Ceará</td>
+                <td class="numero">339 307</td>
+            </tr>
+            <tr>
+                <td class="posiçao">9º</td>
+                <td>Pará</td>
+                <td class="numero">535 081</td>
+            </tr>
+            <tr>
+                <td class="posiçao">10º</td>
+                <td>Maranhão</td>
+                <td class="numero">180 363</td>
+            </tr>
+            <tr>
+                <td class="posiçao">11º</td>
+                <td>Santa Catarina</td>
+                <td class="numero">1 361 165</td>
+            </tr>
+            <tr>
+                <td class="posiçao">12º</td>
+                <td>Goiás</td>
+                <td class="numero">1 051 440</td>
+            </tr>
+            <tr>
+                <td class="posiçao">13º</td>
+                <td>Paraíba</td>
+                <td class="numero">207 967</td>
+            </tr>
+            <tr>
+                <td class="posiçao">14º</td>
+                <td>Espírito Santo</td>
+                <td class="numero">318 534</td>
+            </tr>
+            <tr>
+                <td class="posiçao">15º</td>
+                <td>Amazonas</td>
+                <td class="numero">457 190</td>
+            </tr>
+            <tr>
+                <td class="posiçao">16º</td>
+                <td>Rio Grande do Norte</td>
+                <td class="numero">134 379</td>
+            </tr>
+            <tr>
+                <td class="posiçao">17º</td>
+                <td>Alagoas</td>
+                <td class="numero">7 017</td>
+            </tr>
+            <tr>
+                <td class="posiçao">18º</td>
+                <td>Piauí</td>
+                <td class="numero">150 840</td>
+            </tr>
+            <tr>
+                <td class="posiçao">19º</td>
+                <td>Mato Grosso</td>
+                <td class="numero">623 691</td>
+            </tr>
+            <tr>
+                <td class="posiçao">20º</td>
+                <td>Distrito Federal</td>
+                <td class="numero">246 908</td>
+            </tr>
+            <tr>
+                <td class="posiçao">21º</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="numero">307 676</td>
+            </tr>
+            <tr>
+                <td class="posiçao">22º</td>
+                <td>Sergipe</td>
+                <td class="numero">141 541</td>
+            </tr>
+            <tr>
+                <td class="posiçao">23º</td>
+                <td>Rondônia</td>
+                <td class="numero">18 607</td>
+            </tr>
+            <tr>
+                <td class="posiçao">24º</td>
+                <td>Tocantins</td>
+                <td class="numero">128 014</td>
+            </tr>
+            <tr>
+                <td class="posiçao">25º</td>
+                <td>Acre</td>
+                <td class="numero">96 467</td>
+            </tr>
+            <tr>
+                <td class="posiçao">26º</td>
+                <td>Amapá</td>
+                <td class="numero">63 982</td>
+            </tr>
+            <tr>
+                <td class="posiçao">27º</td>
+                <td>Roraima</td>
+                <td class="numero">185 824</td>
+            </tr>
         </tbody>
-
-        <tfoot></tfoot>
+        <tfoot>
+            <tr>
+               
+                <th colspan="2" scope="row">Crescimento total</th>
+                <td class=" numero">12 306 713</td>
+            </tr>
+        </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima id ea nihil dicta, ratione veritatis sunt rerum nostrum fuga modi nemo accusantium alias reiciendis excepturi consequuntur odio cumque nobis similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto facere corrupti officiis est iste, natus eius blanditiis reprehenderit quisquam fuga quae atque eligendi molestias laudantium itaque iure id consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti facilis quo aliquid neque mollitia omnis non architecto vero, veniam, ex dolor? Minus labore fugiat molestias eum. Maxime, a alias.</p>
+  
 </body>
 </html>
