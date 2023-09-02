@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navegando nos iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            width: 90vw;
+            height: 40vw;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, est porro! Perferendis tempora mollitia voluptatem saepe nesciunt reiciendis laudantium ratione enim deserunt iure nulla, quod beatae unde facere amet nostrum.</p>
+    <ul>
+        <li><a href="../ex023/tabela2.html" target="frame">página um</a></li>
+        <li><a href="../ex023/tabela3.html" target="frame">página dois</a></li>
+        <li><a href="../ex023/tabela4.html" target="frame">página tres</a></li>
+        <!--"frame" em target indica interação entre links e iframe com name="frames"-->
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Aliquid veniam repudiandae numquam odit dignissimos. Perferendis error minima molestias est natus quidem, numquam, odit tempora obcaecati ullam delectus sapiente in harum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ab voluptas voluptatem ex sapiente mollitia in nesciunt praesentium, similique illo dolorum sequi nemo, numquam voluptate, debitis veritatis modi recusandae laudantium.</p>
+    <iframe srcdoc="<h1>Escolha uma página.</h1>" name="frame" frameborder="1"></iframe>
+    <!--pode-se usar tags html dentro de srcdoc=""-->
+    <!--mas criar outro arquivo html e usar src="" é mais aconselhável-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laudantium dignissimos fugit eveniet veniam tenetur numquam culpa consequatur nulla similique nam sapiente ratione dicta magni nesciunt incidunt omnis, eum ut.</p>
+    
+</body>
+</html>
