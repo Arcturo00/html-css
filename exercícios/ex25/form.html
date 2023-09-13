@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>input de email e telefone</h1>
+    <form action="Cadastro.php" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" maxlength="50">
+            </p>
+            <p>
+                <label for="itelefone">Telefone</label>
+                <input type="tel" name="telefone" id="itelefone" required autocomplete="tel-national" maxlength="16" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+                <!--estudar mais regras sobre RegEx(expressões regulares)-->
+                <!--pattern indica um padrão.O pradão escolhido foi :(xx)xxxx-xxxx
+            
+                    \d indica digitos, pode-se trocar por[0-9]
+                    {2},{4,5} e{4} indicam a quantidade de digitos
+                    \(\) indica parenteses
+                    Tudo tem que ficar entre ^ e $
+                -->
+            </p>
+        
+        <!--div usada para agrupar inputs ou inputs relacionados-->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </fieldset>
+    </form>
+</body>
+</html>

@@ -13,10 +13,22 @@
 <body>
     <h1>primeiro Formulário</h1>
 
-    <form action="cadastro.php" autocomplete="off">
+    <form method="post" action="cadastro.php" autocomplete="off">
         <!--action="cadastro.php"
         os dados seram armasenados nesse arquivo -->
+
         <!--autocomplete="off" indica que não terei sugestões para completar os formulários-->
+
+        <!--method
+        indica o método de envio
+
+        get:é a opção padrão , os dados ficaram visivieis na url.Só envia 3000bits.Não se get em campos sensieis ou em transferencia de arquivos.
+
+        obs:para formulários mais seguros aprenda mais sobre https.
+
+        post:sem dados na url,mas isso não significa segurança.
+    
+    -->
         
         <!--tag de formulário-->
         <p>

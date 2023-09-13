@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2</title>
+</head>
+<body>
+    <h1>Radio e Checkbox</h1>
+    <form action="Cadastro.php">
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="sxfem">Feminino</label>
+            <input type="radio" name="sexo" id="sxfem">
+            <br>
+            <label for="sxmas">Masculino</label>
+            <input type="radio" name="sexo" id="sxmas" checked>
+            <!--radio é o oposto de checkbox
+            as opções deinpute devem ter o mesmo name -->
+
+            <!--checked é usado dentro do input que vc quer por padrão marcado.Não pode ser usado mais de uma vez no radio-->
+
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <label for="ifut">futebol</label>
+            <input type="checkbox" name="fut" id="ifut">
+            <label for="ibas">basquete</label>
+            <input type="checkbox" name="bas" id="ibas">
+            <label for="icap">capoeira</label>
+            <input type="checkbox" name="cap" id="icap">
+            <label for="isam">sambo</label>
+            <input type="checkbox" name="sam" id="isam">
+            <!--checkbox permite a escolha de mais de uma opção-->
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário 02</title>
+</head>
+<body>
+    <form action="Cadastro.php" method="post" autocomplete="on" >
+         <p>
+            <label for="iusuario">Nome:</label>
+       <input type="text" name="usuario" id="iusuario" autocomplete="username" required minlength="2" maxlength="20" size="15" placeholder="Nome de usuário">
+    </p>
+    <!--autocomplete dentro de input ganha uma gama maior de opções
+    current-password:senha antiga/usada-->
+
+    <!--required
+    indica campo de preenchimento obrigatorio-->
+
+    <!--minlength indica a quantidade minima de caracteres
+
+    maxlength é oposto
+    -->
+    <!--size=tamanho da caixa-->
+
+    <!--placeholder é uma mensagem dentro da caixa de texto-->
+
+    <p>
+        <label for="isenha">Senha:</label>
+        <input type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="8" maxlength="20" placeholder="Digite sua senha">
+    </p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+    </form>
+    
+</body>
+</html>
