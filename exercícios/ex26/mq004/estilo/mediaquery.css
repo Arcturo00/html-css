@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/*todas as demais midias*/
+
+/*typical Device Breakinpoints*
+*****************************
+Essas informações vivem se atualizando
+diz os tamanhos das telas?
+
+pequenas telas:até 600px
+celular:de 600px até 768px
+tablet:768px até 992px
+desktop:992px até 1200px
+grandes telas:acima de 1200px*/
+
+
+@media print{/*impressora*/
+
+    *{font-family: 'Courier New', Courier, monospace;}
+    body{
+        background-image:url(../img/back-print.jpg);/*o background colo não aparece na impressão*/
+    }
+    main{
+        border: 2px solid black;
+    }
+    main::after{
+        content: 'Origem: cursoemvideo.com';
+        text-decoration: overline;
+    }
+    main h1{       
+        text-shadow: none;
+        color: black;
+    }
+    img#tv{ display:none; }
+    img#pc{display:none;}
+    img#phone{display:none;}
+    img#tablet{display:none;}
+    img#print{display:block;}
+
+}
+@media screen and (min-width:768px) and (max-width:992px){/*tablet*/
+  body{
+    background-image: url(../img/back-tablet.jpg);
+  }
+    img#tv{ display: none; }
+    img#pc{display: none;}
+    img#phone{display: none;}
+    img#tablet{display:block;}
+    img#print{display:none;}
+}
+
+@media  screen and (min-width:992px) and (max-width:1200px) {/*desktop*/
+    body{
+        background-image: url(../img/back-pc.jpg);
+    }
+    img#tv{ display: none; }
+    img#pc{display: block;}
+    img#phone{display: none;}
+    img#tablet{display:none;}
+    img#print{display:none;}
+    
+}
+@media  screen and (min-width:1200px){/*telas grandes*/
+    body{
+        background-image: url(../img/back-tv.jpg);
+    }
+    img#tv{ display: block; }
+    img#pc{display: none;}
+    img#phone{display: none;}
+    img#tablet{display:none;}
+    img#print{display:none;}
+}

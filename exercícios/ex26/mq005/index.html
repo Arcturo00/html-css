@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="MudouTamanho()">
+    <!-- onresize="MudouTamanho() indica a funcionalidade-->
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer"class="material-icons" onclick="ClickMenu()">menu</span>
+        <!--onclick="ClickMenu()" indica a funcionalidade-->
+                <menu id="itens">
+                    <ul>
+                        <li><a href="#">Opção1</a></li>
+                        <li><a href="#">Opção2</a></li>
+                        <li><a href="#">Opção3</a></li>
+                        <li><a href="#">Opção4</a></li>
+                        <li><a href="#">Opção5</a></li>
+                    </ul>
+                </menu>
+          
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt, deserunt reiciendis amet libero iste aliquam delectus obcaecati, culpa nostrum, a doloribus repellendus sunt! Minima sit aliquid cupiditate placeat ad.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam distinctio totam aut, molestiae veniam voluptatum ullam assumenda dicta iure, tempore impedit quae placeat voluptate voluptates vel odio quo quas.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid molestiae minima saepe soluta maxime dolor, nostrum enim velit ut, recusandae porro quasi nihil tempore fuga amet corporis hic deleniti asperiores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eum accusamus dolorem vero eius ipsam commodi enim sequi, at quibusdam, ab voluptatibus temporibus adipisci quia id et laboriosam, aspernatur repudiandae?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, suscipit excepturi nulla eligendi fugit commodi. Ab deleniti dolore deserunt iste, eveniet explicabo beatae nobis? Atque laboriosam voluptatum qui soluta illo?
+            </p>
+        </article>
+    </main>
+    <script>
+        function MudouTamanho(){
+            if (window.innerWidth >= 768)
+            /*se a largura da janela for maior ou igual*/{
+                itens.style.display = 'block'
+            } 
+            else/* se não for */ {
+                itens.style.display = 'none'
+                
+            }
+        }
+        function ClickMenu(){
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+        }
+           else {itens.style.display = 'block'} 
+        }
+        /*
+        esse script faz o menu surgir e desaparecer.*/
+        /*== é igual
+        = é recebe
+        if é se
+        else é caso não for
+        */
+    </script>
+</body>
+</html>

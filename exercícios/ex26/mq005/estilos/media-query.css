@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px) 
+/*telas maiores que as de um tablet*/
+{
+    span#burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+        /*quando o menu é aberto ,fechado e logo em seguida tela é aumentada, ocorre um problema.Foi usado um script para corrigir esse probleminha*/
+    }
+    menu>ul>li{
+        display: inline-block;
+        /*as opções do menu não mais estão uma em cima da outra*/
+    }
+    main{
+        max-width: 800px;
+    }
+}
